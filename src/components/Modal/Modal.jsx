@@ -1,18 +1,15 @@
 import css from './Modal.module.css';
 import { useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { setModal } from 'redux/modalSlice';
 
-export const Modal = ({ children }) => {
-  const dispatch = useDispatch();
+export const Modal = ({ children, setModal }) => {
   const oncCloseByEsc = useCallback(
     e => {
       if (e.code === 'Escape') {
-        dispatch(setModal(false));
+        setModal(false);
       }
     },
-    [dispatch]
+    [setModal]
   );
 
   useEffect(() => {
@@ -28,7 +25,7 @@ export const Modal = ({ children }) => {
 
   const onBackdropClick = ({ target, currentTarget }) => {
     if (currentTarget === target) {
-      dispatch(setModal(false));
+      setModal(false);
     }
   };
 

@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 import css from './ContactForm.module.css';
-import { setModal } from 'redux/modalSlice';
+import { setModal } from 'redux/modal/modalSlice';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ export const ContactForm = () => {
       return;
     }
     console.log(name.value, number.value);
-    dispatch(addContact({ name: name.value, phone: number.value }));
+    dispatch(addContact({ name: name.value, number: number.value }));
     dispatch(setModal(false));
     form.reset();
   };

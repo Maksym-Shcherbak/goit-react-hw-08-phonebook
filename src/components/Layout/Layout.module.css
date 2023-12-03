@@ -1,0 +1,29 @@
+.container {
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.3) 0%,
+      rgba(17, 17, 17, 0.7) 100%
+    ),
+    url('/src/images/beautiful-sakura.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.3) 0%,
+        rgba(17, 17, 17, 0.7) 100%
+      ),
+      url('/src/images/beautiful-sakura@2x.webp');
+  }
+}

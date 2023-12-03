@@ -1,10 +1,12 @@
 .contactList {
-  min-width: 335px;
-  max-height: 80vh;
-  overflow-y: auto;
+  width: 325px;
+  max-width: 400px;
+  max-height: 50vh;
   font-size: 18px;
+  margin: 20px auto 0;
+  overflow-y: auto;
 }
 
 .wrap {
-  position: relative;
+  padding: 20px 10px;
 }

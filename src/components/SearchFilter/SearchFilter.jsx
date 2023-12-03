@@ -1,7 +1,7 @@
 import css from './SearchFilter.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectFilter } from 'redux/selectors';
-import { setFilter } from 'redux/filterSlice';
+import { selectFilter } from 'redux/contacts/selectors';
+import { setFilter } from 'redux/contacts/filterSlice';
 
 export const SearchFilter = () => {
   const dispatch = useDispatch();
@@ -10,7 +10,8 @@ export const SearchFilter = () => {
   const onHandleChange = e => dispatch(setFilter(e.target.value));
 
   return (
-    <>
+    <div className={css.searchContact}>
+      <h1 className={css.phonebookTitle}>Phonebook</h1>
       <label htmlFor="filter" className={css.filterLabel}>
         Find contacts by name
       </label>
@@ -22,6 +23,6 @@ export const SearchFilter = () => {
         value={enteredName}
         onChange={onHandleChange}
       />
-    </>
+    </div>
   );
 };

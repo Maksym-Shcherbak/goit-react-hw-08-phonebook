@@ -1,13 +1,11 @@
 import css from './Button.module.css';
-import { useDispatch } from 'react-redux';
-import { setModal } from 'redux/modalSlice';
 
-export const Button = () => {
-  const dispatch = useDispatch();
-  const onOpenModal = () => dispatch(setModal(true));
+export const Button = ({ setModal }) => {
+  const onOpenModal = () => setModal(true);
   return (
     <button className={css.addButton} type="button" onClick={onOpenModal}>
-      +
+      <span className={css.btnText}>Add contact </span>
+      <span>+</span>
     </button>
   );
 };
