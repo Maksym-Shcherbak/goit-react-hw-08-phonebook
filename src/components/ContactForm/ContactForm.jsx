@@ -2,9 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
 import css from './ContactForm.module.css';
-import { setModal } from 'redux/modal/modalSlice';
 
-export const ContactForm = () => {
+export const ContactForm = ({ setModal }) => {
   const dispatch = useDispatch();
   const { contacts } = useSelector(selectContacts);
 
@@ -17,9 +16,8 @@ export const ContactForm = () => {
       alert(`${name.value} is already in contacts.`);
       return;
     }
-    console.log(name.value, number.value);
     dispatch(addContact({ name: name.value, number: number.value }));
-    dispatch(setModal(false));
+    setModal(false);
     form.reset();
   };
 

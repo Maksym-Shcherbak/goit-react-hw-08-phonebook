@@ -48,7 +48,6 @@ const ContactPage = lazy(() => import('../pages/Contacts'));
 export const App = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectAuthIsLoading);
-  console.log(isLoading);
 
   useEffect(() => {
     dispatch(refreshThunk());

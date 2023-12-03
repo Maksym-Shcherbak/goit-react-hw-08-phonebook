@@ -31,7 +31,7 @@ const Contacts = () => {
       />
       {showModal && (
         <Modal setModal={setShowModal}>
-          <ContactForm />
+          <ContactForm setModal={setShowModal} />
         </Modal>
       )}
     </>
