@@ -59,8 +59,11 @@
 .inputItem {
   background: #fff;
   color: #333;
-  padding: 14.5px 0px 15px 9px;
+  padding: 13.3px 0px 15.5px 9px;
   border-radius: 5px 0px 0px 5px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* Show/hide password Font Icon */
@@ -74,13 +77,13 @@
 
   margin: 5.9px 0 0 0;
   margin-left: -20px;
-  padding: 15px 9px 19px 0px;
+  padding: 16px 9px 19px 0px;
   border: none;
   border-radius: 0px 5px 5px 0px;
 
   float: right;
   position: relative;
-  right: 1%;
+  right: 2%;
   top: -0.2%;
   z-index: 5;
 

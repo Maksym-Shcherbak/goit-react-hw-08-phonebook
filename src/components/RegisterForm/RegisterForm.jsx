@@ -36,7 +36,7 @@ export const RegisterForm = () => {
         <br />
         <div className={css.fieldSet}>
           <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 16 }}>
+            <IconContext.Provider value={{ size: 15 }}>
               <FaUserCircle />
             </IconContext.Provider>
           </span>
@@ -52,7 +52,7 @@ export const RegisterForm = () => {
           <br />
           {/* user name */}
           <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 16 }}>
+            <IconContext.Provider value={{ size: 15 }}>
               <IoIosMail />
             </IconContext.Provider>
           </span>
@@ -68,7 +68,7 @@ export const RegisterForm = () => {
           <br />
           {/* Password */}
           <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 16 }}>
+            <IconContext.Provider value={{ size: 15 }}>
               <FaKey />
             </IconContext.Provider>
           </span>
@@ -84,7 +84,7 @@ export const RegisterForm = () => {
           {/* Show/hide password */}
           <span>
             <button className={css.faEye} aria-hidden="true" type="button">
-              <IconContext.Provider value={{ size: 16 }}>
+              <IconContext.Provider value={{ size: 15 }}>
                 <FaEye />
               </IconContext.Provider>
             </button>

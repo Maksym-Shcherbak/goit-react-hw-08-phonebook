@@ -47,7 +47,7 @@ export const LoginForm = () => {
         <div className={css.fieldSet}>
           {/* user name */}
           <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 16 }}>
+            <IconContext.Provider value={{ size: 15 }}>
               <IoIosMail />
             </IconContext.Provider>
           </span>
@@ -63,7 +63,7 @@ export const LoginForm = () => {
           <br />
           {/* Password */}
           <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 16 }}>
+            <IconContext.Provider value={{ size: 15 }}>
               <FaKey />
             </IconContext.Provider>
           </span>
@@ -84,7 +84,7 @@ export const LoginForm = () => {
               type="button"
               onClick={togglePasswordVisible}
             >
-              <IconContext.Provider value={{ size: 16 }}>
+              <IconContext.Provider value={{ size: 15 }}>
                 <FaEye />
               </IconContext.Provider>
             </button>
