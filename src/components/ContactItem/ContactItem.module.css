@@ -1,20 +1,25 @@
 .contactList__item {
+  max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 10px;
   align-items: center;
+  padding: 5px 10px;
+  background-color: rgba(158, 201, 238, 0.3);
+  border-radius: 5px;
 }
 
 .contactList__item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.contactList__item::before {
+/* .contactList__item::before {
   content: '•';
   color: red;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
+} */
 
 .contactName {
   text-transform: capitalize;

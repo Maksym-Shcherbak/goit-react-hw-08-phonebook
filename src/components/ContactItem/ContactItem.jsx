@@ -9,6 +9,12 @@ export const ContactItem = ({ id, name, number }) => {
 
   return (
     <li id={id} className={css.contactList__item}>
+      <img
+        className={css.avatar}
+        src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
+        alt="User avatar"
+        width="36"
+      />
       <span className={css.contactName}>{name}</span>: {number}
       <button
         type="button"

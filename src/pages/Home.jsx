@@ -3,6 +3,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: '80px',
   },
   title: {
     fontWeight: 500,
