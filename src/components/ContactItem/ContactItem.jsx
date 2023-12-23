@@ -15,7 +15,11 @@ export const ContactItem = ({ id, name, number }) => {
         alt="User avatar"
         width="36"
       />
-      <span className={css.contactName}>{name}</span>: {number}
+      <span className={css.contactName}>
+        {name}: <span>{number}</span>
+      </span>
+      <br />
+
       <button
         type="button"
         className={css.contactList__button}
