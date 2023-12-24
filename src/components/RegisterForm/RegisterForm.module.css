@@ -53,14 +53,18 @@
   letter-spacing: 0.05em;
 }
 
-/* //////////////////////////////////////////// */
-/* //////////////////////////////////////////// */
+.inputWrap {
+  display: flex;
+}
 
 .inputItem {
   background: #fff;
   color: #333;
   padding: 13.5px 0px 15.5px 9px;
   border-radius: 5px 0px 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Show/hide password Font Icon */
@@ -72,8 +76,8 @@
   background: #fff;
   color: #333;
 
-  margin: 5px 0 0 0;
-  margin-left: -20px;
+  margin: 0;
+  margin-left: -24px;
   padding: 16px 9px 19px 0px;
   border-radius: 0px 5px 5px 0px;
   border: none;
@@ -91,7 +95,7 @@
   width: 250px;
   height: 50px;
 
-  margin-top: 5px;
+  margin-top: 0;
   padding: 15px;
 
   font-size: 16px;

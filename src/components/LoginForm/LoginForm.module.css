@@ -53,17 +53,18 @@
   color: #3e403f;
 }
 
-/* //////////////////////////////////////////// */
-/* //////////////////////////////////////////// */
+.inputWrap {
+  display: flex;
+}
 
 .inputItem {
   background: #fff;
   color: #333;
-  padding: 13.5px 0px 15.5px 9px;
+  padding: 0px 9px;
   border-radius: 5px 0px 0px 5px;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 /* Show/hide password Font Icon */
@@ -75,26 +76,24 @@
   background: #fff;
   color: #333;
 
-  margin: 5px 0 0 0;
-  margin-left: -20px;
+  margin: 0;
+  margin-left: -24px;
   padding: 16px 9px 19px 0px;
   border: none;
   border-radius: 0px 5px 5px 0px;
 
   float: right;
   position: relative;
-  right: 2%;
-  top: 0;
   z-index: 5;
 
   cursor: pointer;
 }
 /* inputs form  */
 .loginFormInput {
-  width: 240px;
+  width: 250px;
   height: 50px;
 
-  margin-top: 5px;
+  margin-top: 0;
   padding: 15px;
   background-color: #fff;
 
@@ -108,9 +107,7 @@
   border-radius: 0px 5px 5px 0px;
   transition: 0.2s linear;
 }
-input[id='email'] {
-  width: 250px;
-}
+
 /* focus  */
 .loginFormInput:focus {
   transform: translateX(-2px);

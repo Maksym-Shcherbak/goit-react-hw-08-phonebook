@@ -46,49 +46,53 @@ export const LoginForm = () => {
         <br />
         <div className={css.fieldSet}>
           {/* user name */}
-          <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 15 }}>
-              <IoIosMail />
-            </IconContext.Provider>
-          </span>
-          {/* user name Input */}
-          <input
-            className={css.loginFormInput}
-            id="email"
-            type="email"
-            name="email"
-            placeholder="@UserName"
-            required
-          />
+          <div className={css.inputWrap}>
+            <span className={css.inputItem}>
+              <IconContext.Provider value={{ size: 15 }}>
+                <IoIosMail />
+              </IconContext.Provider>
+            </span>
+            {/* user name Input */}
+            <input
+              className={css.loginFormInput}
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@mail.com"
+              required
+            />
+          </div>
           <br />
           {/* Password */}
-          <span className={css.inputItem}>
-            <IconContext.Provider value={{ size: 15 }}>
-              <FaKey />
-            </IconContext.Provider>
-          </span>
-          {/* Password Input */}
-          <input
-            className={css.loginFormInput}
-            type="password"
-            placeholder="Password"
-            id="pwd"
-            name="password"
-            required
-          />
-          {/* Show/hide password */}
-          <span>
-            <button
-              className={css.faEye}
-              aria-hidden="true"
-              type="button"
-              onClick={togglePasswordVisible}
-            >
+          <div className={css.inputWrap}>
+            <span className={css.inputItem}>
               <IconContext.Provider value={{ size: 15 }}>
-                <FaEye />
+                <FaKey />
               </IconContext.Provider>
-            </button>
-          </span>
+            </span>
+            {/* Password Input */}
+            <input
+              className={css.loginFormInput}
+              type="password"
+              placeholder="Password"
+              id="pwd"
+              name="password"
+              required
+            />
+            {/* Show/hide password */}
+            <span>
+              <button
+                className={css.faEye}
+                aria-hidden="true"
+                type="button"
+                onClick={togglePasswordVisible}
+              >
+                <IconContext.Provider value={{ size: 15 }}>
+                  <FaEye />
+                </IconContext.Provider>
+              </button>
+            </span>
+          </div>
           <br />
           {/* button LogIn */}
           <button className={`${css.btn} ${css.logIn}`} type="submit">
