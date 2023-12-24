@@ -1,11 +1,17 @@
 .header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 15px;
-  border-bottom: 1px solid #2a363b;
+  border-bottom: 1px solid #d5e2e7;
   position: fixed;
   top: 0;
   left: 0;
   right: auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

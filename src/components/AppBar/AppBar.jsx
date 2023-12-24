@@ -10,8 +10,10 @@ export const AppBar = () => {
 
   return (
     <header className={css.header}>
-      <Navigation />
-      {authenticated ? <UserMenu /> : <AuthNav />}
+      <div className={css.container}>
+        <Navigation />
+        {authenticated ? <UserMenu /> : <AuthNav />}
+      </div>
     </header>
   );
 };
